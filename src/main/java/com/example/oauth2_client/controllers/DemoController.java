@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import net.minidev.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.ClientHttpRequestExecution;
@@ -53,13 +54,6 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.net.http.HttpRequest;
-import java.security.Principal;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 @Controller
 @RequiredArgsConstructor
 public class DemoController {
@@ -79,19 +73,6 @@ public class DemoController {
         model.addAttribute("teaForm", new Tea());
         return "create";
     }
-
-    @GetMapping("/authUser")
-    public String authUser() {
-
-        var a = SecurityContextHolder.getContext().getAuthentication();
-
-        return "home";
-    }
-
-//    @GetMapping("/login")
-//    public String login() {
-//        return "login";
-//    }
 
     @GetMapping("/tea")
     public String selectTea(Model model) {
