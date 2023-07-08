@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th = "https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tea</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+  <div class="teaClass" th:each="tea : ${teaList}">
+      <p>ID: <span th:text="*{tea.id}"></span></p><br>
+      <p>Название: <span th:text="*{tea.name}"></span></p><br>
+      <p>Цвет: <span th:text="*{tea.color}"></span></p><br>
+      <p>Страна: <span th:text="*{tea.origin}"></span></p>
+  </div>
+</body>
+</html>

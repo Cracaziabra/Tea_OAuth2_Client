@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+xmlns:th = "https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create your tea</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/saveTea}" th:object="${teaForm}">
+    <label>Название чая: </label>
+    <input th:field="*{name}" th:type="text"><br><br>
+
+    <label>Цвет чая: </label>
+    <input th:field="*{color}" th:type="text"><br><br>
+
+    <label>Страна происхождения: </label>
+    <input th:field="*{origin}" th:type="text"><br><br>
+
+    <button th:type="submit">Сохранить</button>
+</form>
+</body>
+</html>
