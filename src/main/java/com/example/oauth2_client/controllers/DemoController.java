@@ -48,4 +48,5 @@ public class DemoController {
         rest.delete(resourceServerUri + "/delete/" + id, Tea.class);
         return "redirect:/tea";
     }
+
 }
