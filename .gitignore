@@ -9,6 +9,7 @@ application-dev.yml
 application-test.yml
 mvnw
 mvnw.cmd
+.mvn
 
 ### STS ###
 .apt_generated
