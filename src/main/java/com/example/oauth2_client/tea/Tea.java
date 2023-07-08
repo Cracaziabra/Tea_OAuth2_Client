@@ -2,7 +2,6 @@ package com.example.oauth2_client.tea;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 @Data
 @NoArgsConstructor(force = true)
