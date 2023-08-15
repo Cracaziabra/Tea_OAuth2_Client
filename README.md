@@ -13,6 +13,13 @@
 Получение данных c сервера ресурсов осуществляется через REST API.
 
 ## Изученные технологии
-Spring (Boot, Security, Rest, Session, MVC, Test), OAuth2, PostgreSQL, Redis (для хранения сессий), Lombok, Maven, Git, GitHub (+CI).
+Spring (Boot, Security, Rest, Session, MVC, Test)\
+OAuth2\
+PostgreSQL\
+Redis (для хранения сессий)\
+Lombok\
+Maven\
+Git\
+GitHub (+CI)
 
 Для отображения данных использовались HTML, CSS, Thymeleaf.
